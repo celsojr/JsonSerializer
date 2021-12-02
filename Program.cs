@@ -1,4 +1,5 @@
 ﻿using System;
+using JsonSerializer;
 
 /*
 * Please provide implementation for the folowing method ToJson.
@@ -12,7 +13,7 @@
 */
 
 static string ToJson(object model) {
-    throw new NotImplementedException();
+    return JsonConsole.Serialize(model);
 }
 
 // Example
